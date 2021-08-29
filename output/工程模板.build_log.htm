@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: WANG Administrator, GUET, LIC=RC93N-YLRTD-PC4J8-3ZTRG-IAFNV-0VD19
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\进行中\LCD12864 V2.0\工程模板.uvprojx
+Project File Date:  03/21/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling stm32f10x_it.c...
+user\stm32f10x_it.c(157): warning:  #9-D: nested comment is not allowed
+  /*			ADC_RegularChannelConfig(ADC1,ADC_Channel_0,1,ADC_SampleTime_239Cycles5);	
+user\stm32f10x_it.c: 1 warning, 0 errors
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling main.c...
+.\APP\ADC\adc.h(11): warning:  #1295-D: Deprecated declaration ReadADC - give arg types
+  u16 ReadADC();
+user\main.c(203): warning:  #1295-D: Deprecated declaration DisplayStructure - give arg types
+  void DisplayStructure();
+user\main.c(204): warning:  #1295-D: Deprecated declaration MenuDisplayStructure - give arg types
+  void MenuDisplayStructure();
+user\main.c(205): warning:  #1295-D: Deprecated declaration Menu - give arg types
+  void Menu();
+user\main.c(206): warning:  #1295-D: Deprecated declaration ADC_Service - give arg types
+  void ADC_Service();
+user\main.c(207): warning:  #1295-D: Deprecated declaration ADC_Service_Duct - give arg types
+  void ADC_Service_Duct();
+user\main.c(218): warning:  #177-D: variable "j"  was declared but never referenced
+  	u8 j=0,k=0;	
+user\main.c(219): warning:  #177-D: variable "flag"  was declared but never referenced
+  	u8 flag=0;		
+user\main.c(220): warning:  #177-D: variable "motorAD"  was declared but never referenced
+  	u16 power=0,powerAD,motorAD;
+user\main.c(223): warning:  #177-D: variable "adc0"  was declared but never referenced
+  	u16 adc0,adc1,adc2,adc3;
+user\main.c(223): warning:  #177-D: variable "adc1"  was declared but never referenced
+  	u16 adc0,adc1,adc2,adc3;
+user\main.c(223): warning:  #177-D: variable "adc2"  was declared but never referenced
+  	u16 adc0,adc1,adc2,adc3;
+user\main.c(223): warning:  #177-D: variable "adc3"  was declared but never referenced
+  	u16 adc0,adc1,adc2,adc3;
+user\main.c(224): warning:  #177-D: variable "ti"  was declared but never referenced
+  	u32 ti=0;
+user\main.c(226): warning:  #177-D: variable "min"  was declared but never referenced
+  	u16 min=0,max=10;	
+user\main.c(226): warning:  #177-D: variable "max"  was declared but never referenced
+  	u16 min=0,max=10;	
+user\main.c(942): warning:  #177-D: variable "targetAD"  was declared but never referenced
+  	u16 targetAD;	
+user\main.c(1039): warning:  #177-D: variable "num"  was declared but never referenced
+  		u8 i=0,num=0;	
+user\main.c(1041): warning:  #177-D: variable "wdata"  was declared but never referenced
+  		u16 wdata;
+user\main.c(1043): warning:  #550-D: variable "Tx_Flag"  was set but never used
+  		u8 Tx_Flag=0,Rx_Flag=0;
+user\main.c(1043): warning:  #550-D: variable "Rx_Flag"  was set but never used
+  		u8 Tx_Flag=0,Rx_Flag=0;
+user\main.c: 21 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_exti.c...
+compiling misc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling systick.c...
+compiling LCD12864.c...
+compiling key.c...
+compiling DCMotor.c...
+compiling adc.c...
+APP\ADC\adc.h(11): warning:  #1295-D: Deprecated declaration ReadADC - give arg types
+  u16 ReadADC();
+APP\ADC\adc.c(48): warning:  #177-D: variable "ad"  was declared but never referenced
+  			float ad;
+APP\ADC\adc.c: 2 warnings, 0 errors
+compiling exti.c...
+compiling AT24CXX.c...
+compiling iic.c...
+compiling spi.c...
+compiling nrf24l01.c...
+APP\nrf24l01\nrf24l01.c(28): warning:  #223-D: function "SPI1_Init" declared implicitly
+    SPI1_Init();    		//初始化SPI	 
+APP\nrf24l01\nrf24l01.c(39): warning:  #223-D: function "SPI1_SetSpeed" declared implicitly
+  	SPI1_SetSpeed(SPI_BaudRatePrescaler_4); //spi速度为9Mhz（24L01的最大SPI时钟为10Mhz） 
+APP\nrf24l01\nrf24l01.c(56): warning:  #223-D: function "SPI1_ReadWriteByte" declared implicitly
+    	status =SPI1_ReadWriteByte(reg);//发送寄存器号 
+APP\nrf24l01\nrf24l01.c(68): warning:  #223-D: function "SPI1_ReadWriteByte" declared implicitly
+    	SPI1_ReadWriteByte(reg);   //发送寄存器号
+APP\nrf24l01\nrf24l01.c(83): warning:  #223-D: function "SPI1_ReadWriteByte" declared implicitly
+    	status=SPI1_ReadWriteByte(reg);//发送寄存器值(位置),并读取状态值   	   
+APP\nrf24l01\nrf24l01.c(98): warning:  #223-D: function "SPI1_ReadWriteByte" declared implicitly
+    	status = SPI1_ReadWriteByte(reg);//发送寄存器值(位置),并读取状态值
+APP\nrf24l01\nrf24l01.c(110): warning:  #223-D: function "SPI1_SetSpeed" declared implicitly
+   	SPI1_SetSpeed(SPI_BaudRatePrescaler_4);//spi速度为9Mhz（24L01的最大SPI时钟为10Mhz）   
+APP\nrf24l01\nrf24l01.c(135): warning:  #223-D: function "SPI1_SetSpeed" declared implicitly
+  	SPI1_SetSpeed(SPI_BaudRatePrescaler_8); //spi速度为9Mhz（24L01的最大SPI时钟为10Mhz）   
+APP\nrf24l01\nrf24l01.c: 8 warnings, 0 errors
+compiling pwm.c...
+compiling time.c...
+linking...
+Program Size: Code=20336 RO-data=368 RW-data=1792 ZI-data=1688  
+FromELF: creating hex file...
+".\output\工程模板.axf" - 0 Error(s), 32 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
